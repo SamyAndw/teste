@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@500&display=swap');
+
+
+body{
+    
+   background:linear-gradient(0deg, rgba(101,101,231,1) 0%, rgba(175,103,233,1) 100%);
+    
+}
+
+.bloco{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-315%, -25%);
+    width:20%;
+    
+}
+
+
+.sombra{
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-109%, -57%);
+    width: 90%
+    
+}
+
+.box{
+    background-image: url("img/illustration-woman-online-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: -15%;
+    background-size: 50%;
+    background-color: white;
+    border-radius: 25px;
+    padding: 5% 5% 5% 30%;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.4);
+    display: inline-flex;
+    font-family: 'Kumbh Sans', sans-serif;
+    position: absolute;
+    top: 40%;
+    left:40%;
+    transform: translate(-30%, -30%);
+}
+
+.text{
+    margin: 5px;
+}
+
+h1, .ng{
+    margin-bottom: 5%;
+    color: hsl(238, 29%, 16%);
+    
+}
+
+
+
+.linha {
+    border-bottom-style:solid;
+    border-color: hsl(240, 5%, 91%);
+    border-bottom-width: thin;
+    padding-bottom: 15px;
+    padding-right: -30px;
+
+    color: hsl(237, 12%, 33%);
+     font-size: 12px;
+
+}
+
+.linha:hover{
+    
+    color: hsl(14, 88%, 65%);
+}
+
+.subng{
+    font-size: 12px;
+    border-bottom-style:solid;
+    border-color: hsl(240, 5%, 91%);
+    border-bottom-width: thin;  
+    padding-bottom: 15px;
+    padding-right: 11%;
+    color: hsl(237, 12%, 60%);
+}
+
+.seta{
+
+    float: right;
+}
+
+.CelularSombra, .Celular{
+    display: none;
+}
+
+
+/* Responsividade para celular */
+
+
+@media only screen and (max-width: 700px) {
+.sombra{
+        display: none;
+}
+    
+ .Celular{
+    display: block;
+    position: absolute;
+    top: -10%;
+    left: 258%;
+    transform: translate(-315%, -25%);
+    width:80%; 
+}
+    
+.CelularSombra{
+    display: block;
+    position: absolute;
+    top: -9%;
+    left: -25%;
+    transform: translate(50%, 50%);
+    width: 75%; 
+        
+}
+    
+.bloco{
+    display: none;
+}    
+
+.box{
+     background-image: none; 
+     padding: 18%  5% 5% 5%;
+
+}
+    
+h1{
+    font-size: 30px;
+    padding: 5%;
+    text-align: center;
+}
+    
+}
